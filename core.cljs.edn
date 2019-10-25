@@ -1,0 +1,9 @@
+^{:watch-dirs ["src"]}
+{:main quilty.core
+ :optimizations :none
+ :output-dir "resources/public/js"
+ :output-to  "resources/public/js/main.js"
+ :pretty-print true
+ :source-map true
+ :target-dir "resources"
+ }
