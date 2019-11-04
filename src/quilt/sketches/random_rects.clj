@@ -1,7 +1,7 @@
-(ns quilt.random-rects
+(ns quilt.sketches.random-rects
   (:require [quil.core :as q]
             [quil.middleware :as m]
-            [quilt.palette :refer [rand-palette rand-color]]))
+            [quilt.util.palette :refer [rand-palette rand-color]]))
 
 (defn setup
   ([]

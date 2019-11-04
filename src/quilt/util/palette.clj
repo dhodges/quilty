@@ -1,19 +1,8 @@
-(ns quilt.palette
+(ns quilt.util.palette
   (:require [clojure.string :as str]
             [quil.core :as q]))
 
 ;; main content respectfully stolen from: https://github.com/torgeir/cljs-workshop
-
-(defn find-palette [name]
-  (->> palettes
-    (filter #(= name (:name %)))
-    (first)))
-
-(defn rand-palette []
-  (rand-nth palettes))
-
-(defn rand-color [palette]
-  (rand-nth (:colors palette)))
 
 (defn hex-to-rgb [hex]
   (let [hexes [(subs hex 1 3) (subs hex 3 5) (subs hex 5)]]
@@ -124,3 +113,14 @@
         {:name "hilda05" :colors ["#ff6555" "#ffb58f" "#d8eecf" "#8c4b47" "#bf7f93"] :stroke "#2b0404" :background "#ffda82"}
         {:name "hilda06" :colors ["#f75952" "#ffce84" "#74b7b2" "#f6f6f6" "#b17d71"] :stroke "#0e0603" :background "#f6ecd4"}]
        ))
+
+(defn find-palette [name]
+  (->> palettes
+    (filter #(= name (:name %)))
+    (first)))
+
+(defn rand-palette []
+  (rand-nth palettes))
+
+(defn rand-color [palette]
+  (rand-nth (:colors palette)))
