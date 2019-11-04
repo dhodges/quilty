@@ -1,4 +1,4 @@
-(ns quilty.palette
+(ns quilt.palette
   (:require [clojure.string :as str]
             [quil.core :as q]))
 

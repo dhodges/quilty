@@ -1,5 +1,5 @@
 ^{:watch-dirs ["src"]}
-{:main quilty.core
+{:main quilt.core
  :optimizations :none
  :output-dir "resources/public/js"
  :output-to  "resources/public/js/main.js"
